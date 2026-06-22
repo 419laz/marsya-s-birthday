@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Marsya's birthday</title>
+
+<!-- Google Fonts: Playfair Display (display), Poppins (utility/nav), Arial is system font for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<!-- Lenis Smooth Scroll -->
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+<link rel="stylesheet" href="halamanakhir.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY GLASSMORPHISM NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <button class="navbar__icon" id="navHome" aria-label="Back to previous page" data-magnetic>
+      <i data-lucide="home"></i>
+    </button>
+    <button class="navbar__icon" id="navGallery" aria-label="Go to gallery" data-magnetic>
+      <i data-lucide="image"></i>
+    </button>
+    <button class="navbar__icon" id="navMusic" aria-label="Go to music" data-magnetic>
+      <i data-lucide="music-2"></i>
+    </button>
+  </nav>
+
+  <main class="page">
+
+    <!-- ============================================================
+         HERO SECTION — Couple photo + wishes card
+         ============================================================ -->
+    <section class="hero" id="hero">
+
+      <div class="hero__photo-wrap reveal">
+        <div class="hero__photo-glow"></div>
+        <img
+          class="hero__photo"
+          src="images/alysa.jpeg"
+          onerror="this.onerror=null; this.src='images/alsya.jpeg';"
+        />
+      </div>
+
+      <article class="wish-card reveal" id="wishCard">
+        <div class="wish-card__inner">
+          <h1 class="wish-card__title">Happy birthday Sayang</h1>
+          <p class="wish-card__body">hari ini bukan hanya sekedar hari spesial tapi hari ini lahirnya seseorang yang sangat kucintai, alasan dibalik senyuman aku dan yang paling aku syukuri kehadirannya di dunia ini. hanya sebatas aku tahu kamu lahir di dunia ini, aku sudah sangat bersyukur dan bahagia, sayang. kamu melebihi dari kata "sempurna" yang selalu mengerti keadaan aku baik maupun buruk dan menerima aku apa adanya. terima kasih sudah hadir dikehidupan aku! kamu sudah berhasil menjadi pasangan sekaligus mama terbaik didunia ini bagi aku, seseorang yang selalu merawat aku dengan seluruh kasih sayang dan cinta. aku minta maaf sebesar - besarnya belum bisa menjadi terbaik sebagai pasangan dan membalas semua kebaikan kamu tapi aku berjanji akan selalu berusaha yang terbaik dengan ketulusan hati aku sebagai pasangan kamu dan aku mau bahagiain kamu. aku akan selalu menemani disisi kamu sampai aku bisa melihat kamu tercapai semua impiannya nanti, kita jalani ini semua bersama - sama ya? apapun yang kamu lakukan, aku selalu bangga dan bahagia seperti seorang ayah yang bahgia saat melihat anak perempuannya bisa bertumbuh dengan baik dan berjuang menghadapi kesulitan. aku selalu berdoa dengan Tuhan supaya kamu selalu di berikan kebahagiaan, murah senyum dan semua apa yang kamu inginkan tercapai. i love you infinity and beyond, always and forever sayang.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ============================================================
+         SCENERY OF MARSYA — Photo gallery
+         ============================================================ -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title reveal">Scenery of Marsya</h2>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- 10 photo cards, generated identically; JS handles stagger reveal -->
+        <button class="gallery-item reveal" data-index="0" data-full="images/gallery-01.jpeg">
+          <img src="images/gallery-01.jpeg" alt="Marsya photo 1" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="1" data-full="images/gallery-02.jpeg">
+          <img src="images/gallery-02.jpeg" alt="Marsya photo 2" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="2" data-full="images/gallery-03.jpeg">
+          <img src="images/gallery-03.jpeg" alt="Marsya photo 3" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="3" data-full="images/gallery-04.jpeg">
+          <img src="images/gallery-04.jpeg" alt="Marsya photo 4" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="4" data-full="images/gallery-05.jpeg">
+          <img src="images/gallery-05.jpeg" alt="Marsya photo 5" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="5" data-full="images/gallery-06.jpeg">
+          <img src="images/gallery-06.jpeg" alt="Marsya photo 6" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="6" data-full="images/gallery-07.jpeg">
+          <img src="images/gallery-07.jpeg" alt="Marsya photo 7" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="7" data-full="images/gallery-08.jpeg">
+          <img src="images/gallery-08.jpeg" alt="Marsya photo 8" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="8" data-full="images/gallery-09.jpeg">
+          <img src="images/gallery-09.jpeg" alt="Marsya photo 9" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+        <button class="gallery-item reveal" data-index="9" data-full="images/gallery-10.jpeg">
+          <img src="images/gallery-10.jpeg" alt="Marsya photo 10" onerror="this.onerror=null; this.src='images/placeholder-solo.svg';" loading="lazy" />
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE — "I love you sayang"
+         ============================================================ -->
+    <div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span><span>I</span><span class="space"></span><span>L</span><span>O</span><span>V</span><span>E</span><span class="space"></span><span>Y</span><span>O</span><span>U</span><span class="space"></span><span>S</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>G</span></span>
+    <span><span>I</span><span class="space"></span><span>L</span><span>O</span><span>V</span><span>E</span><span class="space"></span><span>Y</span><span>O</span><span>U</span><span class="space"></span><span>S</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>G</span></span>
+    <span><span>I</span><span class="space"></span><span>L</span><span>O</span><span>V</span><span>E</span><span class="space"></span><span>Y</span><span>O</span><span>U</span><span class="space"></span><span>S</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>G</span></span>
+    <span><span>I</span><span class="space"></span><span>L</span><span>O</span><span>V</span><span>E</span><span class="space"></span><span>Y</span><span>O</span><span>U</span><span class="space"></span><span>S</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>G</span></span>
+    <span><span>I</span><span class="space"></span><span>L</span><span>O</span><span>V</span><span>E</span><span class="space"></span><span>Y</span><span>O</span><span>U</span><span class="space"></span><span>S</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>G</span></span>
+  </div>
+</div>
+</div>
+    <!-- ============================================================
+         MARSYA'S FAVORITE SONG — Spotify-style player
+         ============================================================ -->
+    <section class="music-section" id="music">
+  <h2 class="section-title reveal">Marsya's favorite song</h2>
+
+  <div class="player-list reveal" id="playerList">
+
+    <div class="track-card" data-track="1" data-src="audio/acrossthesea.mp3">
+      <div class="track-card__art">
+        <img src="images/acrossthesea.jpg" alt="Across the Sea album art" onerror="this.onerror=null; this.src='images/placeholder-album.svg';" />
+      </div>
+      <div class="track-card__info">
+        <p class="track-card__title">Across the Sea</p>
+        <p class="track-card__artist">Weezer</p>
+      </div>
+      <div class="track-card__visualizer" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <button class="track-card__toggle" aria-label="Play Across the Sea">
+        <i data-lucide="play" class="icon-play"></i>
+        <i data-lucide="pause" class="icon-pause"></i>
+      </button>
+      <audio class="track-card__audio" preload="none" src="audio/acrossthesea.mp3"></audio>
+    </div>
+
+    <div class="track-card" data-track="2" data-src="audio/dyeitred.mp3">
+      <div class="track-card__art">
+        <img src="images/dyeitred.jpg" alt="Dye It Red album art" onerror="this.onerror=null; this.src='images/placeholder-album.svg';" />
+      </div>
+      <div class="track-card__info">
+        <p class="track-card__title">Dye It Red</p>
+        <p class="track-card__artist">beabadoobee</p>
+      </div>
+      <div class="track-card__visualizer" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <button class="track-card__toggle" aria-label="Play Dye It Red">
+        <i data-lucide="play" class="icon-play"></i>
+        <i data-lucide="pause" class="icon-pause"></i>
+      </button>
+      <audio class="track-card__audio" preload="none" src="audio/dyeitred.mp3"></audio>
+    </div>
+
+    <div class="track-card" data-track="3" data-src="audio/engineno9.mp3">
+      <div class="track-card__art">
+        <img src="images/engineno9.jpg" alt="Engine No. 9 album art" onerror="this.onerror=null; this.src='images/placeholder-album.svg';" />
+      </div>
+      <div class="track-card__info">
+        <p class="track-card__title">Engine No. 9</p>
+        <p class="track-card__artist">Deftones</p>
+      </div>
+      <div class="track-card__visualizer" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <audio class="track-card__audio" preload="none" src="audio/engineno9.mp3"></audio>
+      <button class="track-card__toggle" aria-label="Play Engine No. 9">
+        <i data-lucide="play" class="icon-play"></i>
+        <i data-lucide="pause" class="icon-pause"></i>
+      </button>
+    </div>
+
+  </div>
+      <p class="player-hint" id="playerHint">tap a track to start the music</p>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       LIGHTBOX OVERLAY (gallery)
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">
+      <i data-lucide="x"></i>
+    </button>
+    <img class="lightbox__image" id="lightboxImage" src="" alt="" />
+  </div>
+
+  <!-- ============================================================
+       HIDDEN AMBIENT BACKSOUND
+       (mulai berputar otomatis begitu ada interaksi pertama di halaman;
+        otomatis pause kalau salah satu track playlist diputar)
+       ============================================================ -->
+  <audio id="ambientAudio" preload="none" loop src="audio/lovesong.mp3"></audio>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <span>made by @al</span>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
