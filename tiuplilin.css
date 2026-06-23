@@ -543,25 +543,30 @@ body {
 @media (max-width: 480px) {
   .cake-wrap {
     position: relative;
-    top: -140px;
-  }
-
-  .dynamic-text {
-    top: -40px;
+    top: 0; 
+    width: 220px;
+    height: 220px;
   }
 
   .cake-stage {
-    gap: 155px;
-    padding-bottom: 0;
-    justify-content: flex start;
-    padding-top: 10vh;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 24px; 
+    padding-top: 4vh;
+    padding-bottom: 160px; /
+    height: 100vh;
+  }
+  
+  .dynamic-text {
+    top: -45px;
+    font-size: 1.15rem;
   }
 
   .wish-box.is-active {
-    bottom: 120px;
+    bottom: 35px; 
   }
-}
+
 
 @media (prefers-reduced-motion: reduce) {
   .petal,
