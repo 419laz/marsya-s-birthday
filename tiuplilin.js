@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const NEXT_PAGE_URL = "halamanakhir/halamanakhir.html"; // ganti sesuai halaman tujuan setelah amplop ditap
+  const NEXT_PAGE_URL = "halamanakhir.html"; // ganti sesuai halaman tujuan setelah amplop ditap
 
   const bodyEl = document.body;
   const cakeStage = document.getElementById("cakeStage");
