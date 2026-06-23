@@ -19,6 +19,14 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+button:focus,
+a:focus,
+.cake-wrap:focus,
+.envelope:focus {
+  outline: none;
 }
 
 html, body {
